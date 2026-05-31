@@ -1,0 +1,33 @@
+# nodus-queue
+
+> RedisQueueBackend LPUSH/BRPOP+Lua, DLQ, delayed jobs.
+> Part of the [Masterplan Infinite Weave](https://www.the-master-plan.com/) ecosystem.
+> Created by Shawn Knight.
+
+**Notes:** tenacity required; redis is optional. Skip redis tests with --ignore=tests/test_redis_backend.py in dev.
+
+## Status
+
+v0.1.0 — prepared, not yet published. All GitHub repos aligned at github.com/Masterplanner25.
+
+## Install
+
+```
+pip install nodus-queue  # once published
+pip install -e . --no-deps  # dev install
+```
+
+## Ecosystem
+
+- nodus-lang: https://github.com/Masterplanner25/Nodus
+- nodus-sdk (unified install): https://github.com/Masterplanner25/nodus-sdk
+- All packages: https://github.com/Masterplanner25
+- Masterplan Infinite Weave: https://www.the-master-plan.com/
+
+## Creator & Ecosystem
+
+Created by Shawn Knight — [Masterplan Infinite Weave](https://www.the-master-plan.com/)
+
+- [Why I'm Building A.I.N.D.Y.](https://medium.com/masterplan-infinite-weave/2025-chatgpt-ai-the-duality-of-progress-why-im-building-a-i-n-d-y-or-any-tool-really-a138f7860fba) — strategic context for this stack
+- [Duality of Progress: Master Index](https://medium.com/masterplan-infinite-weave/2025-chatgpt-ai-the-duality-of-progress-master-index-strategic-manifesto-4c96cf98348a) — the framework this project serves
+- [AI Search Optimization](https://medium.com/masterplan-infinite-weave/2025-chatgpt-case-study-ai-search-optimization-0f8cd5e78d4f) — the discoverability philosophy behind this ecosystem
