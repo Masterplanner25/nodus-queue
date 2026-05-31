@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=80", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nodus-queue"
+version = "0.1.0"
+description = "Distributed job queue with DLQ, delayed jobs, in-flight tracking, Redis backend, and in-memory fallback"
+authors = [{ name = "Shawn Knight" }]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = ["queue", "redis", "distributed", "jobs", "dlq", "nodus"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+dependencies = ["tenacity>=8.0.0"]
+
+[project.optional-dependencies]
+redis = ["redis>=4.0.0"]
+dev   = ["pytest>=8.0", "fakeredis>=2.0.0", "redis>=4.0.0"]
+
+[project.urls]
+Homepage = "https://github.com/Masterplanner25/nodus-queue"
+Repository = "https://github.com/Masterplanner25/nodus-queue"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["nodus_queue*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
