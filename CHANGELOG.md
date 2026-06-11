@@ -11,7 +11,7 @@ Versioning: [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [0.1.0] — 2026-05-31
 
-Initial release — prepared, not yet published.
+Initial release.
 
 ### Added
 
